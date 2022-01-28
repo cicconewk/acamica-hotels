@@ -64,12 +64,8 @@ export const getHotels = (filters) => {
         const from = getFormattedDate(filter.from.value);
         const to = getFormattedDate(filter.to.value);
 
-        console.log(
-          hotel[filter.from.type].timestamp < from,
-          hotel[filter.to.type].timestamp > to,
-        );
         if (
-          hotel[filter.from.type].timestamp < from &&
+          hotel[filter.from.type].timestamp < from ||
           hotel[filter.to.type].timestamp > to
         ) {
           return false;
