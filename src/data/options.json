@@ -1,0 +1,28 @@
+{
+  "countries": {
+    "default": "",
+    "data": [
+      { "label": "argentina", "value": "argentina" },
+      { "label": "chile", "value": "chile" },
+      { "label": "uruguay", "value": "uruguay" },
+      { "label": "brasil", "value": "brasil" }
+    ]
+  },
+  "prices": {
+    "default": "",
+    "data": [
+      { "label": "económico", "value": "1" },
+      { "label": "comfort", "value": "2" },
+      { "label": "lujoso", "value": "3" },
+      { "label": "magnífico", "value": "4" }
+    ]
+  },
+  "sizes": {
+    "default": "",
+    "data": [
+      { "label": "pequeño", "value": "small" },
+      { "label": "mediano", "value": "medium" },
+      { "label": "grande", "value": "big" }
+    ]
+  }
+}

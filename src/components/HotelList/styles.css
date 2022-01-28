@@ -1,0 +1,8 @@
+.hotels {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}

@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-grow: 1;
+  background-color: #01d0b1;
+  padding: 2rem 5rem;
+}
+
+.isFilled {
+  font-weight: bold;
+  color: white;
+}
