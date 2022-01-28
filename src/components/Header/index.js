@@ -9,6 +9,17 @@ const ROOM_SIZES = {
 };
 
 const ROOM_PRICES = ["Económico", "Comfort", "Lujoso", "Magnífico"];
+const LOCALE_OPTIONS = {
+  es: {
+    lang: "es-ES",
+    options: {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    },
+  },
+};
 
 export default function Header() {
   const [state] = useContext(GlobalContext);
@@ -23,7 +34,13 @@ export default function Header() {
           }
         >
           {Boolean(state.dateFrom) && Boolean(state.dateTo)
-            ? `Desde ${state.dateFrom}, Hasta ${state.dateTo}`
+            ? `Desde el ${new Date(state.dateFrom).toLocaleDateString(
+                LOCALE_OPTIONS.es.lang,
+                LOCALE_OPTIONS.es.options,
+              )}, hasta el ${new Date(state.dateTo).toLocaleDateString(
+                LOCALE_OPTIONS.es.lang,
+                LOCALE_OPTIONS.es.options,
+              )}`
             : "En cualquier fecha"}
         </p>
         <p className={Boolean(state.country) ? "isFilled" : ""}>
